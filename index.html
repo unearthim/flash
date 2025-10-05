@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced FLASH Protocol | Gemini Analyst</title>
+    
+    <!-- Meta Tags for SEO and Sharing -->
+    <meta name="description" content="An interactive application where Gemini performs the complete Enhanced FLASH Protocol for asset analysis, based on the v4.0 framework from the unearth.im Cultural Infrastructure Laboratory.">
+    <meta name="author" content="unearth.im">
+    <meta name="keywords" content="FLASH Protocol, Gemini, AI Analyst, Echo Test, Spark Test, Domain Analysis, Asset Valuation, Sentientification">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-deep-navy: #0A0E1B;
+            --text-off-white: #F8F7F4;
+            --accent-ember: #FF8A00;
+            --accent-ember-dark: #D97400;
+            --border-gray: #2E2E2E;
+            --card-bg: #101524;
+            --subtle-text: #a0aec0;
+        }
+
+        body {
+            background-color: var(--bg-deep-navy);
+            color: var(--text-off-white);
+            font-family: 'Lora', serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .ui-font { font-family: 'Inter', sans-serif; }
+        .accent-color { color: var(--accent-ember); }
+        .accent-bg { background-color: var(--accent-ember); }
+        .accent-bg:hover { background-color: var(--accent-ember-dark); }
+        .border-accent { border-color: var(--accent-ember); }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-deep-navy); }
+        ::-webkit-scrollbar-thumb { background: var(--border-gray); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #5A7D8C; }
+
+        /* General Styles */
+        h1, h2, h3, h4 { font-family: 'Lora', serif; }
+        .card { background-color: var(--card-bg); border: 1px solid var(--border-gray); }
+        .input-field {
+            background-color: #1a202c;
+            border: 1px solid var(--border-gray);
+            color: var(--text-off-white);
+            font-family: 'Inter', sans-serif;
+            transition: all 0.2s ease;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: var(--accent-ember);
+            box-shadow: 0 0 0 2px rgba(255, 138, 0, 0.3);
+        }
+        .btn {
+            font-family: 'Inter', sans-serif;
+            transition: all 0.2s ease;
+            transform: translateY(0);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Loading Spinner */
+        .spinner {
+            border: 4px solid var(--border-gray);
+            border-top: 4px solid var(--accent-ember);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Final Report Styles */
+        .report-section {
+            border-bottom: 2px solid var(--border-gray);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        .report-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .report-content h2 {
+            font-size: 1.8rem;
+            color: var(--accent-ember);
+            margin-bottom: 1rem;
+        }
+        .report-content h3 {
+            font-size: 1.2rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            color: var(--subtle-text);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .report-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .report-content th, .report-content td {
+            border: 1px solid var(--border-gray);
+            padding: 0.75rem;
+            text-align: left;
+        }
+        .report-content th {
+            background-color: #1a202c;
+            font-family: 'Inter', sans-serif;
+        }
+        .report-content .final-grade {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .report-content .final-score {
+            font-size: 1.2rem;
+            color: var(--subtle-text);
+        }
+        .report-content blockquote {
+            border-left: 4px solid var(--accent-ember);
+            padding-left: 1rem;
+            margin-left: 0;
+            font-style: italic;
+            color: var(--subtle-text);
+        }
+        .report-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        /* Animation */
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div id="app" class="container mx-auto max-w-5xl p-4 md:p-8">
+        
+        <header class="text-center mb-12 border-b border-gray-800 pb-8">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Enhanced FLASH Protocol</h1>
+            <p class="ui-font text-lg text-gray-400">The Digital Archaeologist's Console v4.0</p>
+        </header>
+
+        <main>
+            <section id="stage-input" class="fade-in">
+                <div class="card p-8 text-center">
+                    <h2 class="text-3xl font-bold mb-4">Initiate Analysis</h2>
+                    <p class="text-gray-400 mb-6 max-w-2xl mx-auto">Enter the asset (e.g., domain.tld) for a full protocol analysis. Gemini will perform the complete, multi-persona evaluation and generate the final report.</p>
+                    <div class="flex flex-col justify-center items-center gap-4 max-w-lg mx-auto">
+                        <div class="flex flex-col sm:flex-row w-full gap-4">
+                            <input id="asset-name-input" type="text" placeholder="e.g., myceloom.com" class="input-field w-full rounded-md p-3 text-center text-lg">
+                            <button id="start-protocol-btn" class="btn accent-bg w-full sm:w-auto text-white font-bold py-3 px-8 rounded-md text-lg">Perform Analysis</button>
+                        </div>
+                        <div class="w-full mt-4">
+                            <input id="api-key-input" type="password" placeholder="Optional: Your API Key" class="input-field w-full rounded-md p-3 text-center text-sm">
+                        </div>
+                        <p class="text-xs text-gray-5
+

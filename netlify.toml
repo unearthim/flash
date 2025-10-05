@@ -1,0 +1,6 @@
+[build]
+  command = "echo 'No build command needed for this static site'"
+  publish = "." # This tells Netlify to publish the root directory
+
+[functions]
+  directory = "netlify/functions" # This tells Netlify where your functions are
