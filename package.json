@@ -1,0 +1,14 @@
+{
+  "name": "flash-protocol-app",
+  "version": "1.0.0",
+  "description": "Serverless function for the Enhanced FLASH Protocol app.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "unearth.im",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
